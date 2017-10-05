@@ -6,7 +6,7 @@ class Credit_check
   end
 
   def multiply_digits
-    @card_number = @card_number.each_char.map(&:to_i).reverse 
+    @card_number = @card_number.each_char.map(&:to_i).reverse
      i = 1
      while i <= @card_number.length
          if i.odd?
@@ -28,21 +28,12 @@ class Credit_check
      end
   end
   def validate
-       if @card_number.sum % 10 == 0
+       if @card_number.sum % 10 == 0 # make sure sum is divsible by 10
          p true
       else
+         p @card_number
          p false
       end
   end
 
 end
-
-
-
-
-
-# Your Luhn Algorithm Here
-
-# Output
-## If it is valid, print "The number is valid!"
-## If it is invalid, print "The number is invalid!"
