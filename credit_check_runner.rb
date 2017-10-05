@@ -1,5 +1,5 @@
 require "./credit_check"
 
 
-credit= Credit_check.new("1111111111")
+credit= Credit_check.new("4024007136512380")
 credit.multiply_digits

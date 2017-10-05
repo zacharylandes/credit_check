@@ -31,7 +31,6 @@ class Credit_check
        if @card_number.sum % 10 == 0 # make sure sum is divsible by 10
          p true
       else
-         p @card_number
          p false
       end
   end
